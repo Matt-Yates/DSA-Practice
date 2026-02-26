@@ -6,10 +6,10 @@ class DynamicArray():
     def __init__(self):
         self.size = 0  #default starting size of 0
         self.capacity = 10 #default starting capacity of 10
-        self.arr = [None] * capacity
+        self.arr = [None] *  self.capacity
 
     def append(self, value):
-        if self.size = self.capacity:
+        if self.size == self.capacity:
             self.resize()
             
         
@@ -27,7 +27,7 @@ class DynamicArray():
         self.arr = newArr
 
     def pushback(self, value):
-        if self.size = self.capacity:
+        if self.size == self.capacity:
             self.resize()
 
         self.arr[self.size] = value
